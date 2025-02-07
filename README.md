@@ -9,3 +9,4 @@ Link para ver la página: https://yo-0ss.github.io/COURSE-FRONTEND_M3/
 
 Contiene las siguientes carpetas : 
 - `clase-02-04` : Primera interacción con JavaSript.
+- `clase-02-06` : Ejercicios de comparaciones y decisiones en JavaScript.
