@@ -12,3 +12,4 @@ Contiene las siguientes carpetas :
 - `clase-02-06` : Ejercicios de comparaciones y decisiones en JavaScript.
 - `clase-02-11` : Ejercicios de arreglos y ciclos en JavaScript.
 - `clase-02-13` : Ejercicios de funciones en JavaScript.
+- `clase-02-20` : Ejercicios de DOM en JavaScript.
