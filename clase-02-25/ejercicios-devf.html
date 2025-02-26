@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio-devf.css">
+    <title>Paswords</title>
+</head>
+<body>
+    <h1>Generador de Passwords</h1>
+
+    <section class="container-password">
+        <h3 id="display-password"></h3>
+        <section class="container-control">
+            <label for="length">Longitud:
+                <input type="number" id="length" class="input-longitud">
+            </label>
+            <label>
+                <input type="checkbox" id="uppercase">
+                Incluir mayúsculas
+            </label>
+            <label>
+                <input type="checkbox" id="numbers">
+                Incluir números
+            </label>
+            <label>
+                <input type="checkbox" id="symbols">
+                Incluir símbolos
+            </label>
+        </section>
+        <button onclick="createPassword()">Generar Contraseña</button>
+    </section>
+
+    <script src="ejercicios-devf.js"></script>
+</body>
+</html>
