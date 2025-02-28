@@ -1,39 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+    box-sizing: border-box;
+}
 body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
     font-family: "poppins", serif;
     background-color: #ECE2D0;
+    line-height: 1.5;
+    margin: 0;
 }
-.food-container{
+header{
+    width: 100%;
+    padding: 0px 5%;
+    height: 72px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    background: white;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 5%;
+}
+.contenedor-principal{
+    display: flex;
+    justify-content: space-between;
+}
+main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 5%;
+    margin: 0px 5%;
+    margin-left: 0;
 }
-img{
-    width: 60vw;
-    height: 50vh;
+aside{
+    background-color: white;
+    width: 350px;
+    
+    margin: 0px 5%;
+    padding: 0;
+
+}
+aside p{
+    font-weight: bold;
+}
+.listas{
+    list-style: none;
+}
+.food-container img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
 }
 .comment-container{
     display: flex;
     flex-direction: column;
-    width: 60vw;
-    margin-left: 5%;
+    width: 100%;
+}
+.comment-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 textarea{
     margin-bottom: 10px;
-    font-size: 10px;
-    height: 5vh;
+    font-size: 14px;
+    height: 10vh;
+    width: 80%;
+    resize: none;
+    border-color: #7F5539;
+    border-width: 2px;
 }
-
 button{
-    width: 50%;
+    width: 100px;
     height: 5vh;
-    margin-top: 7px;
-    margin-left: 25%;
+    margin-left: 3vw;
     border: none;
     background-color: #E6CCB2;
     color: #7F5539;
@@ -43,10 +86,43 @@ button{
 button:hover{
     background-color: #DDB892;
 }
-
 .comentario{
     background-color: white;
-    margin: 5px;
-    padding: 10px;
-    
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.avatar{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.datos-user{
+    display: flex;
+    align-items: center;
+}
+.datos-user strong{
+    margin-left: 1vw;
+    font-size: 24px;
+}
+.fecha{
+    color: rgb(122, 122, 122);
+    font-size: 14px;
+}
+.texto{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px){
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+        margin: 0px 5%;
+    }
 }

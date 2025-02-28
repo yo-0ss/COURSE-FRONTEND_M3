@@ -3,30 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/expresso.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="home.css">
     <title>Branko</title>
 </head>
 <body>
-    <h1>Food Fast!!!</h1>
+    <header>
+        <h1>Branko</h1>
+    </header>
 
-    <section class="food-container">
-        <section class="description-container">
-            <h2>Branko</h2>
-            <p>Descubre nuestro platillo principal</p>
-        </section>
-        <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </section>
+    <div class="contenedor-principal">
+        <aside> <!-- Checkbox solo de adorno -->
+            <p>Tipo de establecimiento</p>
+            <ul>
+                <li class="listas"><input type="checkbox" placeholder="-" id="1">Restaurantes</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="2">Café y Té</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="3">Postres</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="4">Panaderás</li>
+            </ul>
+            <p>Tipo de comida</p>
+            <ul>
+                <li class="listas"><input type="checkbox" placeholder="-" id="5">Desayuno</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="6">Brunch</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="7">Almuerzo</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="8">Cena</li>
+            </ul>
+            <p>Precio</p>
+            <ul>
+                <li class="listas"><input type="checkbox" placeholder="-" id="9">Comer barato</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="10">Gama media</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="11">Comida gourmet</li>
+            </ul>
+        </aside>
+        <main>
+            <section class="food-container">
+                <h2>Café Limón</h2>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/fb/7c/b3/cafe-limon.jpg?w=900&h=-1&s=1" alt="">
+                <section class="description-container">
+                    <p>For coffee lovers!</p>
+                    <strong>Características</strong>
+                    <ul>
+                        <li>Opciones veganas</li>
+                        <li>Pagos digitales, Acepta tarjetas de crédito: American Express, Mastercard, Visa</li>
+                        <li>Desayuno, Almuerzo, Brunch</li>
+                    </ul>
+                </section>
+            </section>
+            <section  class="comment-container">
+                <h2>Opiniones</h2>
+                <h3>Escribe tu opinión</h3>
+                <div class="comment-post">
+                    <textarea placeholder="Escribe tu comentario." id="comment"></textarea>
+                    <button onclick="postComment()">Publicar</button>
+                </div>
+        
+                <section id="comment-section">
+                    
+                </section>
+            </section>
+        </main>
+    </div>
 
-    <section  class="comment-container">
-        <h2>Comentarios</h2>
-        <p id="user-info"></p>
-        <textarea placeholder="Publica un comentario" id="comment"></textarea>
-        <button onclick="post()">Publicar</button>
-
-        <section id="comment-section">
-
-        </section>
-    </section>
+    <footer>
+        <p>Proyecto creado por Yosselin Ríos. 2025.</p>
+    </footer>
 
     <script src="home.js"></script>
 </body>
