@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/expresso.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <title>Branko</title>
 </head>
 <body>
     <header>
+        <img src="images/expresso.png" alt="Logo">
         <h1>Branko</h1>
     </header>
 
     <div class="contenedor-principal">
         <aside> <!-- Checkbox solo de adorno -->
-            <p>Tipo de establecimiento</p>
+            <div class="search-container">
+                <p>Tipo de establecimiento</p>
             <ul>
                 <li class="listas"><input type="checkbox" placeholder="-" id="1">Restaurantes</li>
-                <li class="listas"><input type="checkbox" placeholder="-" id="2">Café y Té</li>
-                <li class="listas"><input type="checkbox" placeholder="-" id="3">Postres</li>
-                <li class="listas"><input type="checkbox" placeholder="-" id="4">Panaderás</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="2" checked>Café y Té</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="3">Bares</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="4">Panaderías</li>
             </ul>
             <p>Tipo de comida</p>
             <ul>
-                <li class="listas"><input type="checkbox" placeholder="-" id="5">Desayuno</li>
-                <li class="listas"><input type="checkbox" placeholder="-" id="6">Brunch</li>
-                <li class="listas"><input type="checkbox" placeholder="-" id="7">Almuerzo</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="5" checked>Desayuno</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="6" checked>Brunch</li>
+                <li class="listas"><input type="checkbox" placeholder="-" id="7" checked>Almuerzo</li>
                 <li class="listas"><input type="checkbox" placeholder="-" id="8">Cena</li>
             </ul>
             <p>Precio</p>
@@ -34,18 +37,41 @@
                 <li class="listas"><input type="checkbox" placeholder="-" id="10">Gama media</li>
                 <li class="listas"><input type="checkbox" placeholder="-" id="11">Comida gourmet</li>
             </ul>
+            </div>
+            <h1>Nuestros Favoritos!</h1>
+            <article class="recommend-container">
+                <img src="images/photo0jpg.jpg" alt="Imagen del Restaurante">
+                <div class="Restaurante-info">
+                    <h1>Me Muero de Hambre</h1>
+                    <p>Justo en el “Barrio Antiguo” y al centro de todo lo que debes visitar en Monterrey se encuentra “Me Muero de Hambre”, un lugar como ningún otro.</p>
+                </div>
+                <button>Ver Más</button>
+            </article>
         </aside>
         <main>
             <section class="food-container">
-                <h2>Café Limón</h2>
+                <h1>Café Limón</h1>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/fb/7c/b3/cafe-limon.jpg?w=900&h=-1&s=1" alt="">
                 <section class="description-container">
+                    <h2>Acerca de</h2>
                     <p>For coffee lovers!</p>
-                    <strong>Características</strong>
+                    <div class="ubicacion">
+                        <span class="material-symbols-outlined">
+                        location_on
+                        </span>
+                        <p>Avenida Junco de La Vega # 308 Colonia Altavista, Monterrey 64840 México</p>
+                    </div>
+                    <h3>Características</h3>
                     <ul>
-                        <li>Opciones veganas</li>
-                        <li>Pagos digitales, Acepta tarjetas de crédito: American Express, Mastercard, Visa</li>
-                        <li>Desayuno, Almuerzo, Brunch</li>
+                        <li><span class="material-symbols-outlined">
+                            potted_plant
+                            </span>Opciones veganas</li>
+                        <li><span class="material-symbols-outlined">
+                            wallet
+                            </span>Pagos digitales, Acepta tarjetas de crédito: American Express, Mastercard, Visa</li>
+                        <li><span class="material-symbols-outlined">
+                            check
+                            </span>Desayuno, Almuerzo, Brunch</li>
                     </ul>
                 </section>
             </section>
@@ -56,7 +82,6 @@
                     <textarea placeholder="Escribe tu comentario." id="comment"></textarea>
                     <button onclick="postComment()">Publicar</button>
                 </div>
-        
                 <section id="comment-section">
                     
                 </section>

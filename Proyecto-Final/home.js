@@ -48,9 +48,8 @@ function mostrarComentarios() {
         const comentarioSection = document.createElement("section");
         comentarioSection.classList.add("comentario");
         comentarioSection.innerHTML = `<section class="datos-user">
-        <img src="${comment.image}" class="avatar" alt="avatar">
-        <strong>${comment.name}</strong> </section>
-        <p class="fecha">${comment.timestamp}</p>
+        <img src="${comment.image}" class="avatar" alt="avatar"> <div>
+        <strong>${comment.name}</strong> <p class="fecha">${comment.timestamp}</p> </div> </section>
         <p class="texto">${comment.commentText}</p>`;
         
         let botonEliminar = document.createElement("button");

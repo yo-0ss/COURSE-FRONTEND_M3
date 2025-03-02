@@ -5,7 +5,8 @@
 }
 body{
     font-family: "poppins", serif;
-    background-color: #ECE2D0;
+    background-color: #FEFAE0;
+    color: #372414; 
     line-height: 1.5;
     margin: 0;
 }
@@ -13,20 +14,67 @@ header{
     width: 100%;
     padding: 0px 5%;
     height: 72px;
-    font-size: 14px;
+    font-size: 20px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    background: white;
+    background: #606C38;
+    color: #FEFAE0;
     margin-bottom: 20px;
 }
+header img{
+    width: 50px;
+    margin-right: 20px;
+}
 footer{
-    background-color: white;
+    background-color: #D7CBB3;
+    color: #99630E;
     margin-top: 20px;
     padding: 10px 5%;
 }
 .contenedor-principal{
     display: flex;
     justify-content: space-between;
+}
+aside{
+    width: 350px;
+    color: #99630E;
+    margin: 0px 5%;
+}
+.search-container p{
+    font-weight: bold;
+    margin: 5% 5%;
+}
+.search-container{
+    background-color: #D7CBB3;
+    padding: 5% 0px;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+.listas{
+    list-style: none;
+}
+.recommend-container{
+    padding: 5% 0px;
+    border-radius: 20px;
+    background-color: #D7CBB3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recommend-container img{
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.recommend-container button{
+    margin: 0;
+    background-color: #606C38;
+    color: #D7CBB3;
+}
+.recommend-container div{
+    margin: 5% 5%;
 }
 main{
     display: flex;
@@ -35,24 +83,30 @@ main{
     margin: 0px 5%;
     margin-left: 0;
 }
-aside{
-    background-color: white;
-    width: 350px;
-    
-    margin: 0px 5%;
-    padding: 0;
-
-}
-aside p{
-    font-weight: bold;
-}
-.listas{
-    list-style: none;
+.food-container h1{
+    font-size: 45px;
+    margin: 0;
 }
 .food-container img{
     width: 100%;
     height: 60vh;
     object-fit: cover;
+}
+.ubicacion{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.description-container ul{
+    list-style: none;
+}
+.description-container ul li{
+    position: relative;
+}
+.description-container ul li span{
+    position: absolute;
+    top: 0px; 
+    left: -30px; 
 }
 .comment-container{
     display: flex;
@@ -70,7 +124,8 @@ textarea{
     height: 10vh;
     width: 80%;
     resize: none;
-    border-color: #7F5539;
+    border-color: #D7CBB3;
+    background-color: #F7EBDF;
     border-width: 2px;
 }
 button{
@@ -83,39 +138,53 @@ button{
     cursor: pointer;
     border-radius: 15px;
 }
-button:hover{
+.comentario button:hover{
     background-color: #DDB892;
 }
+.comentario button{
+    position: absolute;
+    top: 25px; 
+    right: 20px; 
+}
 .comentario{
-    background-color: white;
+    background-color: #F7EBDF;
     padding: 20px;
+    position: relative;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
 .avatar{
-    height: 5vh;
-    width: 5vh;
+    height: 7vh;
+    width: 7vh;
     border-radius: 50px;
     object-fit: cover;
 }
 .datos-user{
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
+}
+.datos-user div{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 1vw;
 }
 .datos-user strong{
-    margin-left: 1vw;
     font-size: 24px;
 }
 .fecha{
-    color: rgb(122, 122, 122);
+    color: rgba(55, 36, 20, 60%);
     font-size: 14px;
+    margin: 0;
 }
 .texto{
     margin: 0;
     padding: 0;
 }
+
 
 @media screen and (max-width: 768px){
     aside{

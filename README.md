@@ -15,4 +15,17 @@ Contiene las siguientes carpetas :
 - `clase-02-18` : Ejercicio de objetos en JavaScript.
 - `clase-02-20` : Ejercicios de DOM en JavaScript.
 - `clase-02-25` : Ejercicio "Generador de Passwords".
-- `Proyecto-Final` : Avances del proyecto final (crear una página de comentarios)
+- `Proyecto-Final` : Proyecto Final: "App de Comentarios"
+
+## 💬  Proyecto Final: "App de Comentarios" 
+En este proyecto, desarrollé una página web donde los usuarios pueden publicar comentarios desde diferentes cuentas. Además, la aplicación guarda los comentarios incluso al cerrar la página o cambiar de cuenta.
+
+### Usuarios Disponibles
+
+| Usuarios   | Contraseñas |
+|------------|-------------|
+| yo-oss     | 1234        |
+| ivanfou    | abcd        |
+| marilopez  | pass123     |
+| cmendez99  | qwerty      |
+| admin      | 1234        |
